@@ -1,13 +1,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.33;
   color: $basic-color;
   min-height: 100vh;
 
   @media screen and (min-width: 480px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   @media screen and (min-width: 768px) {
@@ -65,4 +65,8 @@ address {
   border: 0;
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
+}
+
+.inactive-blok {
+  display: none;
 }

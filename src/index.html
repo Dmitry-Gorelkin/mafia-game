@@ -17,176 +17,28 @@
 
     <div class="container">
       <!-- БЛОК: Зоголовой игры -->
-      <div>
-        <h1>Мафия Классическая 2.0</h1>
-      </div>
+      <include src="./partials/header.html"></include>
 
       <!-- БЛОК: Кнопка начало новой игры -->
-      <div>
-        <div>Новая Игра</div>
-      </div>
-
-      <!-- БЛОК: Новая игра -->
-      <div>
-        <h2>Новая Игра</h2>
-        <p>Введите кол-во игроков:</p>
-        <input type="text" />
-
-        <p>Или выберете нужные ролли</p>
-        <ul>
-          <li class="list">Блокиратор</li>
-          <li class="list">Любовница</li>
-          <li class="list">Комисар</li>
-          <li class="list">Тусовщик</li>
-          <li class="list">Доктор</li>
-        </ul>
-
-        <ul>
-          <li class="list">Дон Мафии</li>
-          <li class="list">Зам. Дона Мафии</li>
-          <li class="list">Мафия</li>
-          <li class="list">Маньяк</li>
-        </ul>
-
-        <ul>
-          <li class="list">Мирный 1</li>
-          <li class="list">Мирный 2</li>
-          <li class="list">Мирный 3</li>
-          <li class="list">Мирный 4</li>
-          <li class="list">Мирный 5</li>
-        </ul>
-
-        <p>Участвует игроков: <span>ЧИСЛО</span></p>
-
-        <div><button>Начать новую игру</button> <button>Отмена</button></div>
-      </div>
+      <include src="./partials/newGame_btn.html"></include>
 
       <!-- БЛОК: Конпки доп информации -->
-      <div>
-        <ul>
-          <li class="list">Правила игры</li>
-          <li class="list">Участники</li>
-          <li class="list">История текущей игры</li>
-        </ul>
-      </div>
-
-      <!-- БЛОК: Правила игры -->
-      <div>
-        <h2>Правила игры</h2>
-        <ol>
-          <li>Играем в закрытую. Не показываем карточки, даже после смерти.</li>
-          <li>Бережно относимся к карточкам.</li>
-          <li>
-            Если Мафия и Маньяк стреляют друг в друга, то выстрел маньяка приоритетнее и убивает
-            мафию, а мафия его нет.
-          </li>
-          <li>
-            Блокираторт блокирует любое ночное действие, не может блокировать игрока две ночь подрят
-            <i>(только через ночь)</i>.
-          </li>
-          <li>
-            Доктор может лечить любого игрока, но не может лечить две ночи подрят
-            <i>(только через ночь)</i>, <b>себя может лечить только один раз за игру</b>.
-          </li>
-          <li>Любовница дает имунитет один раз за игру любому игроку.</li>
-          <li>...</li>
-        </ol>
-      </div>
+      <include src="./partials/navigationInfo.html"></include>
 
       <!-- БЛОК: Перечень всех участников в игре -->
-      <div>
-        <h2>Участники</h2>
-        <ul>
-          <li class="list">Имя - Блокиратор</li>
-          <li class="list">Имя - Любовница</li>
-          <li class="list">Имя - Комисар</li>
-          <li class="list">Имя - Тусовщик</li>
-          <li class="list">Имя - Доктор</li>
-        </ul>
-
-        <ul>
-          <li class="list">Имя - Дон Мафии</li>
-          <li class="list">Имя - Зам. Дона Мафии</li>
-          <li class="list">Имя - Мафия</li>
-          <li class="list">Имя - Маньяк</li>
-        </ul>
-
-        <ul>
-          <li class="list">Имя - Мирный 1</li>
-          <li class="list">Имя - Мирный 2</li>
-          <li class="list">Имя - Мирный 3</li>
-          <li class="list">Имя - Мирный 4</li>
-          <li class="list">Имя - Мирный 5</li>
-        </ul>
-      </div>
+      <include src="./partials/participants.html"></include>
 
       <!-- БЛОК: Ночные действия -->
-      <div>
-        <h2>Ночные действия</h2>
-        <p>Ход игрока: РОЛЬ</p>
-        <ul>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">имя игрока</li>
-          <li class="list">Ни в кого (в воздух)</li>
-        </ul>
-
-        <p>Роль убита, но должна сделать ходи</p>
-      </div>
+      <include src="./partials/actionNight.html"></include>
 
       <!-- БЛОК: Обсуждение перед дневным голосованием -->
-      <div>
-        <h2>Обсуждение</h2>
-
-        <div>
-          <p></p>
-          <ul>
-            <li class="list">Таймер 10 секунд</li>
-            <li class="list">Таймер 30 секунд</li>
-            <li class="list">Таймер 1 минута</li>
-            <li class="list">Таймер 2 минуты</li>
-            <li class="list">Таймер 3 минуты</li>
-          </ul>
-        </div>
-
-        <button>Начать голосование</button>
-      </div>
+      <include src="./partials/discussion.html"></include>
 
       <!-- БЛОК: Дневные голосования -->
-      <div>
-        <h2>Голосование</h2>
-
-        <p>Голосует игрок: ИМЯ</p>
-        <ul>
-          <li class="list">имя игрока - 1</li>
-          <li class="list">имя игрока - 2</li>
-          <li class="list">имя игрока - 0</li>
-          <li class="list">имя игрока - 0</li>
-          <li class="list">имя игрока - 6</li>
-        </ul>
-
-        <button>Закончить голосование</button>
-      </div>
+      <include src="./partials/voting.html"></include>
 
       <!-- БЛОК: История игры -->
-      <div>
-        <h2>История игры</h2>
-        <div>
-          <p>Общим голосованием был повешаи игрок ИМЯ (РОЛЬ)</p>
-          <p>День 2</p>
-          <p>Любовница дала имунитет игроку ИМЯ (РОЛЬ)</p>
-          <p>Блокиратор заблокировалл игрока ИМЯ (РОЛЬ)</p>
-          <p>Ночь 1</p>
-          <p>ведуший познакомился с игроками</p>
-          <p>День №1</p>
-        </div>
-      </div>
+      <include src="./partials/logGame.html"></include>
     </div>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
