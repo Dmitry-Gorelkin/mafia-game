@@ -1,22 +1,22 @@
 {
-  "name": "game-mafia",
+  "name": "mafia-game",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Dmitry-Gorelkin.github.io/game-mafia",
+  "homepage": "https://Dmitry-Gorelkin.github.io/mafia-game",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /game-mafia/"
+    "build": "parcel build src/*.html --public-url /mafia-game/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dmitry-Gorelkin/game-mafia.git"
+    "url": "git+https://github.com/Dmitry-Gorelkin/mafia-game.git"
   },
   "keywords": [],
   "author": "",
   "license": "",
   "bugs": {
-    "url": "https://github.com/Dmitry-Gorelkin/game-mafia/issues"
+    "url": "https://github.com/Dmitry-Gorelkin/mafia-game/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
